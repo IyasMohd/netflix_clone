@@ -17,7 +17,7 @@ class NumberCard extends StatelessWidget {
           children: [
             const SizedBox(
               height: 190,
-              width: 20,
+              width: 30,
             ),
             Container(
               width: 130,
@@ -32,17 +32,19 @@ class NumberCard extends StatelessWidget {
           ],
         ),
         Positioned(
-          bottom: 10,
-          left: 5,
+          bottom: -20,
+          right: 95,
           child: BorderedText(
-            strokeWidth: 3,
+            strokeWidth: 4,
+            strokeColor: kWhiteColor,
             child: Text('$index',
                 textAlign: TextAlign.left,
-                style: GoogleFonts.oswald(
-                  color: Colors.transparent,
+                style: GoogleFonts.robotoMono(
+                  color: kBlackColor,
                   fontSize: 120,
-                  fontWeight: FontWeight.w900,
-                  decorationColor: kWhiteColor,
+                  fontWeight: FontWeight.bold,
+                  decoration: TextDecoration.none,
+                  decorationColor: kBlackColor,
                 )),
           ),
         ),

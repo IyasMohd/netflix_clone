@@ -10,3 +10,14 @@ BorderRadius kRadius15 = BorderRadius.circular(15);
 BorderRadius kRadius20 = BorderRadius.circular(20);
 
 BorderRadius kRadius30 = BorderRadius.circular(30);
+
+//image url
+const kMainImage =
+    "https://www.themoviedb.org/t/p/w220_and_h330_face/vNVFt6dtcqnI7hqa6LFBUibuFiw.jpg";
+
+//Text Style
+
+const kTextStyle = TextStyle(
+  fontSize: 14,
+  fontWeight: FontWeight.bold,
+);

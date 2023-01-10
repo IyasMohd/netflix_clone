@@ -14,15 +14,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
       theme: ThemeData(
         scaffoldBackgroundColor: kBackgroundColor,
         backgroundColor: kBackgroundColor,
         primarySwatch: Colors.blue,
         fontFamily: GoogleFonts.montserrat().fontFamily,
         textTheme: const TextTheme(
-          bodyText1: TextStyle(color: kWhiteColor),
-        ),
+            bodyText1: TextStyle(color: kWhiteColor),
+            bodyText2: TextStyle(color: kWhiteColor)),
       ),
       home: ScreenMainPage(),
     );

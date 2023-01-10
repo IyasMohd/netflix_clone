@@ -20,7 +20,13 @@ class ScreenDownloads extends StatelessWidget {
       appBar: const PreferredSize(
         preferredSize: Size.fromHeight(50),
         child: AppBarWidget(
-          title: 'Downloads',
+          header: Text(
+            'Downloads',
+            style: TextStyle(
+              fontSize: 30,
+              fontWeight: FontWeight.w900,
+            ),
+          ),
         ),
       ),
       body: ListView.separated(
