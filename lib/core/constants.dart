@@ -15,6 +15,9 @@ BorderRadius kRadius30 = BorderRadius.circular(30);
 const kMainImage =
     "https://www.themoviedb.org/t/p/w220_and_h330_face/vNVFt6dtcqnI7hqa6LFBUibuFiw.jpg";
 
+const newandHotTempImage =
+    "https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/3WjbxaqYB4vAbdUfdr5vbglD2JZ.jpg";
+
 //Text Style
 
 const kTextStyle = TextStyle(

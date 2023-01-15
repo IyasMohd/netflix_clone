@@ -46,9 +46,15 @@ class BackgroundCard extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: const [
-                  VideoActions(icon: Icons.add, title: 'My List'),
+                  VideoActions(
+                    icon: Icons.add,
+                    title: 'My List',
+                  ),
                   PlayButton(),
-                  VideoActions(icon: Icons.info_outline, title: 'Info'),
+                  VideoActions(
+                    icon: Icons.info_outline,
+                    title: 'Info',
+                  ),
                 ],
               ),
             ),

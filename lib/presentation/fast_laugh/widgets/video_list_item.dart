@@ -53,17 +53,27 @@ class VideoListItem extends StatelessWidget {
                       VideoActions(
                         icon: Icons.emoji_emotions,
                         title: 'LOL',
+                        iconSize: 30,
+                        fontSize: 14,
                       ),
                       VideoActions(
                         icon: Icons.add,
                         title: 'My List',
+                        iconSize: 30,
+                        fontSize: 14,
                       ),
                       VideoActions(
                         icon: Icons.share_rounded,
                         title: 'Share',
+                        iconSize: 30,
+                        fontSize: 14,
                       ),
                       VideoActions(
-                          icon: Icons.play_arrow_rounded, title: 'Play')
+                        icon: Icons.play_arrow_rounded,
+                        title: 'Play',
+                        iconSize: 30,
+                        fontSize: 14,
+                      )
                     ],
                   ),
                 )
@@ -79,7 +89,14 @@ class VideoListItem extends StatelessWidget {
 class VideoActions extends StatelessWidget {
   final IconData icon;
   final String title;
-  const VideoActions({Key? key, required this.icon, required this.title})
+  final double iconSize;
+  final double fontSize;
+  const VideoActions(
+      {Key? key,
+      required this.icon,
+      required this.title,
+      this.iconSize = 30,
+      this.fontSize = 14})
       : super(key: key);
 
   @override
@@ -91,12 +108,12 @@ class VideoActions extends StatelessWidget {
           Icon(
             icon,
             color: kWhiteColor,
-            size: 30,
+            size: iconSize,
           ),
           kWidth,
           Text(
             title,
-            style: const TextStyle(fontSize: 14),
+            style: TextStyle(fontSize: fontSize),
           ),
         ],
       ),
