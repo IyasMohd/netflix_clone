@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:netflix_clone/core/colors/colors.dart';
 import 'package:netflix_clone/core/constants.dart';
 import 'package:netflix_clone/presentation/fast_laugh/widgets/video_list_item.dart';
+import 'package:netflix_clone/presentation/new_and_hot/widgets/video_widget.dart';
 
 class ComingSoonWidget extends StatelessWidget {
   const ComingSoonWidget({
@@ -45,37 +46,7 @@ class ComingSoonWidget extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Stack(
-                children: [
-                  SizedBox(
-                    width: double.infinity,
-                    height: 200,
-                    child: Image.network(
-                      newandHotTempImage,
-                      fit: BoxFit.cover,
-                    ),
-                  ),
-                  Positioned(
-                    bottom: 0,
-                    right: 0,
-                    child: Padding(
-                      padding: const EdgeInsets.all(5.0),
-                      child: CircleAvatar(
-                        radius: 17,
-                        backgroundColor: kBlackColor.withOpacity(0.5),
-                        child: IconButton(
-                          onPressed: () {},
-                          icon: const Icon(
-                            Icons.volume_off,
-                            color: kWhiteColor,
-                            size: 20,
-                          ),
-                        ),
-                      ),
-                    ),
-                  )
-                ],
-              ),
+              const VideoWidget(),
               kHeight,
               Row(
                 children: [

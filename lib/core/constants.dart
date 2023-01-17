@@ -4,6 +4,8 @@ const kWidth = SizedBox(width: 10);
 const kHeight = SizedBox(height: 10);
 const kHeight20 = SizedBox(height: 20);
 
+const kHeight50 = SizedBox(height: 50);
+
 //Border Radius
 
 BorderRadius kRadius15 = BorderRadius.circular(15);
@@ -18,9 +20,13 @@ const kMainImage =
 const newandHotTempImage =
     "https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/3WjbxaqYB4vAbdUfdr5vbglD2JZ.jpg";
 
+const newandHotTempImage2 =
+    "https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/sjxtIUCWR74yPPcZFfTsToepfWm.jpg";
 //Text Style
 
 const kTextStyle = TextStyle(
   fontSize: 14,
   fontWeight: FontWeight.bold,
 );
+
+const imageAppendUrl = "https://image.tmdb.org/t/p/w500";
