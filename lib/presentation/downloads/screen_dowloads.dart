@@ -115,7 +115,6 @@ class Section2 extends StatelessWidget {
                       backgroundColor: Colors.grey.withOpacity(0.5),
                       radius: size.width * 0.38,
                     ),
-                    
                     DownloadsImageWidget(
                       imageList:
                           '$imageAppendUrl${state.downloads[0].posterPath}',
@@ -126,7 +125,7 @@ class Section2 extends StatelessWidget {
                     ),
                     DownloadsImageWidget(
                       imageList:
-                          '$imageAppendUrl/uKvVjHNqB5VmOrdxqAt2F7J78ED.jpg',
+                          '$imageAppendUrl${state.downloads[1].posterPath}',
                       margin: const EdgeInsets.only(right: 170, top: 50),
                       angle: -25,
                       size: Size(size.width * 0.33, size.width * 0.53),
@@ -134,7 +133,7 @@ class Section2 extends StatelessWidget {
                     ),
                     DownloadsImageWidget(
                       imageList:
-                          '$imageAppendUrl/uKvVjHNqB5VmOrdxqAt2F7J78ED.jpg',
+                          '$imageAppendUrl${state.downloads[2].posterPath}',
                       margin: const EdgeInsets.only(left: 0, top: 30),
                       size: Size(size.width * 0.4, size.width * 0.62),
                       radius: 15,
