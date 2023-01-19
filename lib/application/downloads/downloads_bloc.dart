@@ -20,6 +20,7 @@ class DownloadsBloc extends Bloc<DownloadsEvent, DownloadsState> {
     on<_GetDownloadsImages>((event, emit) async {
       emit(state.copyWith(
         isLoding: true,
+        
         downloadsFailureOrSuccessOption: none(),
       ));
       final Either<MainFailure, List<Downloads>> downloadsOption =
